@@ -1,0 +1,89 @@
+{
+    "pantry":[
+        {
+            "Frutas":[
+                {
+                    "name": "manzana",
+                    "qty": 8,
+                    "expiresIn": 5,
+                    "usedBy":{
+                        "users":[
+                            {
+                                "name": "Alfredo",
+                                "in": ["Ensalada de manzana", "Licuado"]
+                            },
+                            {
+                                "name": "Africa",
+                                "in": ["Licuado"]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "pera",
+                    "qty": 4,
+                    "expiresIn": 5,
+                    "usedBy":{
+                        "users":[]
+                    }
+                },
+                {
+                    "name": "banana",
+                    "qty": 4,
+                    "expiresIn": 5,
+                    "usedBy":{
+                        "users":[]
+                    }
+                }
+            ]
+        },
+        {
+            "Vegetales":[
+                {
+                    "name": "limón",
+                    "qty": 4,
+                    "expiresIn": 5,
+                    "usedBy":{
+                        "users":[]
+                    }
+                }
+            ]
+        },
+        {
+            "Carnes":[
+                {
+                    "name": "Milanesa de pulpa blanca",
+                    "qty": 1,
+                    "expiresIn": 5,
+                    "usedBy":{
+                        "users":[]
+                    }
+                }
+            ]
+        },
+        {
+            "No perecederos":[
+                {
+                    "name": "Milanesa de pulpa blanca",
+                    "qty": 1,
+                    "expiresIn": 5,
+                    "usedBy":{
+                        "users":[]
+                    }
+                }
+            ]
+        },
+        {
+            "Otros":[
+                {
+                    "name": "Milanesa de pulpa blanca",
+                    "qty": 1,
+                    "expiresIn": 5,
+                    "usedBy":{
+                        "users":[]
+                    }
+                }
+            ]
+        }
+    ]
+}

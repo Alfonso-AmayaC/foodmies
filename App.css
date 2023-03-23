@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Permanent+Marker&display=swap');
+
+.tooltip {
+    text-decoration: underline;
+}
+
+.tooltip:hover {
+    /* background-color: rgba(0, 128, 128, 0.37); */
+    cursor: pointer;
+}
+
+.active {
+    background: #91CAF2;
+}
+
+.menuLogo{
+    font-family: 'Permanent Marker';
+    font-size: 36px;
+}
+
+.menuItem {
+    transition: all 150ms;
+    padding: 0.7em 0.6em;
+    margin: 0 !important;
+}
+
+.menuItem:hover {
+    background: #91CAF2;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
