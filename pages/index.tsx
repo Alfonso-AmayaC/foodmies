@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { Box, Heading } from '@chakra-ui/react';
-import Login from '../components/login';
+import Login from '../components/Login';
 
 const IndexPage = () => {
   return (

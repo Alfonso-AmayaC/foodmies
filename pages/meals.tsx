@@ -1,6 +1,6 @@
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import Head from "next/head"
-import NotFound from "../components/notFound"
+import NotFound from "../components/NotFound"
 
 
 export default function Meals() {

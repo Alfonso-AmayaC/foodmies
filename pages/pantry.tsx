@@ -1,8 +1,8 @@
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import Head from "next/head";
 import { Stack, Heading, Text, Flex, Tooltip } from "@chakra-ui/react"
 import Dashboard from "../components/dashboard";
-import Menu from "../components/menu";
+import Menu from "../components/Menu";
 import { PantryProvider } from "../components/PantryContext";
 
 export default function Pantry() {

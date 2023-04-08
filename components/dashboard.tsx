@@ -1,10 +1,10 @@
 import { Tabs, TabList, Tab, TabPanels, TabPanel, Grid, GridItem, Box, Button, Skeleton, useDisclosure } from "@chakra-ui/react";
-import PantryItem from "./pantryItem";
+import PantryItem from "./PantryItem";
 import { useContext } from 'react';
 import { PantryContext } from "./PantryContext";
-import NotFound from "./notFound";
+import NotFound from "./NotFound";
 import { pantryItem } from "../types";
-import { Selected } from "./selected";
+import { Selected } from "./Selected";
 import { AddItemModal } from "./modals/addItemModal";
 
 export default function Dashboard() {

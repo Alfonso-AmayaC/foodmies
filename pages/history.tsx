@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Layout from "../components/layout";
-import NotFound from "../components/notFound";
+import Layout from "../components/Layout";
+import NotFound from "../components/NotFound";
 
 export default function History() {
     return (
