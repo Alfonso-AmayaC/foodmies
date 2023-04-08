@@ -24,7 +24,7 @@ export default function Dashboard() {
                                     }/>)
                                 }
                                 <Box textAlign={'center'} pt={'0.5em'}>
-                                    <AddItemModal tab={titles[index]}/>
+                                    <AddItemModal tab={titles[0]}/>
                                 </Box>
                             </GridItem>
                             <GridItem colSpan={4}>
