@@ -3,9 +3,10 @@
         {
             "Frutas":[
                 {
-                    "name": "manzana",
+                    "name": "Manzana",
                     "qty": 8,
-                    "expiresIn": 5,
+                    "bought": "Mar 1, 23 08:00:01 UTC+00:00",
+                    "lifespan": 7,
                     "usedBy":{
                         "users":[
                             {
@@ -20,7 +21,16 @@
                     }
                 },
                 {
-                    "name": "pera",
+                    "name": "Pera",
+                    "qty": 4,
+                    "bought": "Aug 1, 01 08:00:01 UTC+00:00",
+                    "lifespan": 7,
+                    "usedBy":{
+                        "users":[]
+                    }
+                },
+                {
+                    "name": "Sandía",
                     "qty": 4,
                     "expiresIn": 5,
                     "usedBy":{
@@ -28,7 +38,15 @@
                     }
                 },
                 {
-                    "name": "banana",
+                    "name": "Papaya",
+                    "qty": 4,
+                    "expiresIn": 5,
+                    "usedBy":{
+                        "users":[]
+                    }
+                },
+                {
+                    "name": "Banana",
                     "qty": 4,
                     "expiresIn": 5,
                     "usedBy":{
@@ -41,6 +59,14 @@
             "Vegetales":[
                 {
                     "name": "limón",
+                    "qty": 4,
+                    "expiresIn": 5,
+                    "usedBy":{
+                        "users":[]
+                    }
+                },
+                {
+                    "name": "Tomate",
                     "qty": 4,
                     "expiresIn": 5,
                     "usedBy":{

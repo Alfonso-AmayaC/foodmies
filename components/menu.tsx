@@ -31,12 +31,12 @@ export default function userMenu({ name, avatar } : User) {
                 <MenuList>
                     <Link href={'/settings'}>
                         <MenuItem>
-                            Configuración
+                            Settings
                         </MenuItem>
                     </Link>
                     <Link href={'/'}>
                         <MenuItem>
-                            Cerrar sesión
+                            Log out
                         </MenuItem>
                     </Link>
                 </MenuList>
@@ -47,8 +47,8 @@ export default function userMenu({ name, avatar } : User) {
             </PopoverTrigger>
             <PopoverContent>
                 <PopoverCloseButton />
-                <PopoverHeader>Notificaciones</PopoverHeader>
-                <PopoverBody>Yujuu! Sin notificaciones por el momento</PopoverBody>
+                <PopoverHeader>Notifications</PopoverHeader>
+                <PopoverBody>Wujuu! No new notifications for the moment</PopoverBody>
             </PopoverContent>
             </Popover>
         </Flex>

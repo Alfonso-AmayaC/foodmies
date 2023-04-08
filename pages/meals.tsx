@@ -9,7 +9,7 @@ export default function Meals() {
             <Head>
                 <title>Foodmies - Comidas planeadas</title>
             </Head>
-            <NotFound />
+            <NotFound messageText="Upss...todavía no la tenemos" buttonText="Regresar a mi despensa" route="pantry"/>
         </Layout>
     )
 }

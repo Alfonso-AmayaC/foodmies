@@ -1,7 +1,7 @@
 import { Flex, Heading, Button } from "@chakra-ui/react";
 import Link from "next/link";
 import Image from "next/image";
-import ghost from "../public/ghost.svg";
+import ghost from "../public/static/ghost.svg";
 
 export default function NotFound({ messageText, buttonText, route} : NotFound) {
     return (
