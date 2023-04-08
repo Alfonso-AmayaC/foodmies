@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import Head from "next/head";
 import { Stack, Heading, Text, Flex, Tooltip } from "@chakra-ui/react"
-import Dashboard from "../components/dashboard";
+import Dashboard from "../components/Dashboard";
 import Menu from "../components/Menu";
 import { PantryProvider } from "../components/PantryContext";
 

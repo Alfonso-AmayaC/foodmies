@@ -5,7 +5,7 @@ import { pantryItem } from "../types";
 import { useContext } from "react"
 import { PantryContext } from "./PantryContext";
 
-export default function PantryItem({ data, onClick } : { data: pantryItem, onClick?: any}) {
+export function PantryItem({ data, onClick } : { data: pantryItem, onClick?: any}) {
     const { name, qty } = data;
     const { selected } = useContext( PantryContext )
     const isSelected = data.name === selected.name;
