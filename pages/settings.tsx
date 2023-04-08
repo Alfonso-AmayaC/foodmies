@@ -4,7 +4,7 @@ import NotFound from "../components/notFound";
 export default function Settings() {
     return (
         <Layout path={'settings'}>
-            <NotFound />
+            <NotFound buttonText="Back" messageText="Not yet implemented" route="pantry"/>
         </Layout>
     )
 }
