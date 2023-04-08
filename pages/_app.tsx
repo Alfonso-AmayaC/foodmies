@@ -1,5 +1,5 @@
 import { ChakraProvider } from "@chakra-ui/react"
-import '../App.css'
+import '../public/App.css'
 
 export default function App({ Component, pageProps }) {
     return (
