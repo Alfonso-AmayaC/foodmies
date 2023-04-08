@@ -16,7 +16,7 @@ export default function Layout({ children, path }) {
                 <GridItem rowSpan={2} colSpan={1} bg={'#BFE4FF'} roundedBottomRight={'10px'} roundedTopRight={'10px'} zIndex={'modal'} roundedRight={'20px'} borderRight={'9px solid #E2E8F0'}>
                 <Stack direction={'column'} gap={10} pt={'10'}>
                     <Link href={'/pantry'} className={'menuLogo'}>
-                        <Heading as={'h2'} fontFamily={'Permanent Marker'} textAlign={'center'}>Foodmies</Heading>
+                        <Heading as={'h2'} fontFamily={'Permanent Marker'} textAlign={'center'}>Foodmies - The irony</Heading>
                     </Link>
                     <Stack>
                         <Link href={'/pantry'} className={`menuItem ${path === 'pantry' ? 'active' : ''}`}>
