@@ -34,9 +34,9 @@ export const PantryProvider = ({ children }) => {
     // }
 
     useEffect(() => {
-        getData('pantry/Frutas')
+        getData('pantry/fruits')
         .then((retrievedData : any) => {
-            setData({Frutas: retrievedData})
+            setData({fruits: retrievedData})
         })
         .catch((error) => {setError(!error)})
         .finally(() => {setLoaded(!isLoaded);})

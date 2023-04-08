@@ -75,7 +75,7 @@ export const Selected = ({ pantryItem, metadata } : { pantryItem: pantryItem, me
                         <Input id="bought" type={'text'} isReadOnly={true} variant={'flushed'} placeholder={formattedDate}/>
                     </Box>
                     <Box width={'50%'}>
-                        <FormLabel htmlFor="lifespan">Expires in (días)</FormLabel>
+                        <FormLabel htmlFor="lifespan">Expires in (days)</FormLabel>
                         <Input id="lifespan" type={'number'} isReadOnly={true} variant={'flushed'} colorScheme={'messenger'} placeholder={(pantryItem.lifespan + parsedDate.getDate() - today.getDate()).toString()}/>
                     </Box>
                 </Flex>
