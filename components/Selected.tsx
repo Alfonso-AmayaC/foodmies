@@ -10,10 +10,11 @@ const months = ['Januray', 'February', 'March', 'April', 'May', 'June', 'July', 
 
 export const Selected = ({ pantryItem, metadata } : { pantryItem: pantryItem, metadata? : metadata }) => {
     const toast = useToast();
-    const { data, setData } = useContext( PantryContext );
-    const [qty, setQty] = useState(pantryItem.qty);
+    const { data, setData, selected } = useContext( PantryContext );
+    const [qty, setQty] = useState(selected.qty);
     const [canUpdate, setUpdate] = useState(false);
     const [isLoading, setLoading] = useState(false);
+    const [previous, setPrevious] = useState(pantryItem);
 
     const handleQty = (e:any) => {
         setQty(e.target.value);
@@ -48,15 +49,19 @@ export const Selected = ({ pantryItem, metadata } : { pantryItem: pantryItem, me
     }
 
     useEffect(()=>{
-        const decision = data[metadata.tab].find(item => item.name === pantryItem.name).qty != qty;
+        const decision = pantryItem.qty != qty;
         setUpdate(decision);
-    }, [qty])
+        if(previous.name != pantryItem.name){
+            setQty(pantryItem.qty);
+            setPrevious(pantryItem);
+        }
+    }, [qty, pantryItem.qty]);
 
     const parsedDate = new Date(pantryItem.bought);
     const today = new Date();
     const formattedDate = `${weekDays[parsedDate.getDay()]} ${parsedDate.getDate()} ${months[parsedDate.getMonth()]}`;
     const usedByNames = pantryItem.usedBy.users.map(user => user.name);
-
+    
     return (
         <>  
             <Flex justifyContent={'space-between'}>

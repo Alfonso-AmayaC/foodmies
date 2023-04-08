@@ -29,7 +29,7 @@ export default function Dashboard() {
                             </GridItem>
                             <GridItem colSpan={4}>
                                 <Box p={'5'}>
-                                    {selected.name !== '' ? <Selected pantryItem={selected} metadata={{tab:titles[index]}}/> : ''}
+                                    {selected.name !== '' ? <Selected pantryItem={selected} metadata={{tab:titles[0]}}/> : ''}
                                 </Box>
                             </GridItem>
                         </Grid>
