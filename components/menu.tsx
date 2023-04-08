@@ -23,10 +23,20 @@ interface User {
 
 export default function userMenu({ name, avatar } : User) {
     return (
-        <Flex alignItems={'center'}>
+        <Flex alignItems={'center'} justifyContent={'center'}>
+            <Popover>
+            <PopoverTrigger>
+                <Flex pr={2} title={'Notifications button'} role={'button'}><Icon as={IoMdNotifications} color={'blue.500'} boxSize={{ base: 5, md: 7 }}/></Flex>
+            </PopoverTrigger>
+            <PopoverContent>
+                <PopoverCloseButton />
+                <PopoverHeader>Notifications</PopoverHeader>
+                <PopoverBody>Wujuu! No new notifications for the moment</PopoverBody>
+            </PopoverContent>
+            </Popover>
             <Menu>
                 <MenuButton>
-                    <Avatar size={'sm'} name={name} src={avatar}/>
+                    <Avatar size={{ base: 'xs', md: 'sm' }} name={name} src={avatar} bgColor={'black'}/>
                 </MenuButton>
                 <MenuList>
                     <Link href={'/settings'}>
@@ -41,16 +51,6 @@ export default function userMenu({ name, avatar } : User) {
                     </Link>
                 </MenuList>
             </Menu>
-            <Popover>
-            <PopoverTrigger>
-                <Button variant={'unstyled'} p={0}><Icon as={IoMdNotifications} boxSize={6}/></Button>
-            </PopoverTrigger>
-            <PopoverContent>
-                <PopoverCloseButton />
-                <PopoverHeader>Notifications</PopoverHeader>
-                <PopoverBody>Wujuu! No new notifications for the moment</PopoverBody>
-            </PopoverContent>
-            </Popover>
         </Flex>
     );
 }

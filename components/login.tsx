@@ -1,5 +1,5 @@
 import { Flex, Box, Input, FormLabel, FormControl, Heading, Stack, Button } from "@chakra-ui/react";
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from "next/link";
 
 export default function Login() {

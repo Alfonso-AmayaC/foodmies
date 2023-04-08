@@ -17,22 +17,6 @@ export const PantryProvider = ({ children }) => {
         usedBy:{}
     })
 
-    // const getData = async () => {
-    //     try{
-    //         await fetch('/api/pantry/Carnes')
-    //               .then((res) => res.json())
-    //               .then((retrievedData) => {
-    //                   setData(retrievedData);
-    //               })
-    //               .catch((error) => {throw error})
-    //               .finally(() => {setLoaded(!isLoaded);})
-    //     }
-    //     catch(err) {
-    //         setError(!error);
-    //         console.log("Error from context: ",err.message);
-    //     }
-    // }
-
     useEffect(() => {
         getData('pantry/fruits')
         .then((retrievedData : any) => {

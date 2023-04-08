@@ -15,7 +15,7 @@ export function PantryItem({ data, onClick } : { data: pantryItem, onClick?: any
             <Flex alignItems={'center'} gap={2}>
                 {
                 name ? 
-                <Image src={`/static/${name}.svg`} alt={`Imagen de un ${name.toLowerCase()}`} width={'30'} height={'30'} style={{display: 'block'}}/>
+                <Image src={`/${name}.svg`} alt={`Imagen de un ${name.toLowerCase()}`} width={'30'} height={'30'} style={{display: 'block'}}/>
                 :
                 <Icon as={IoMdImage} boxSize={7}/>
                 }

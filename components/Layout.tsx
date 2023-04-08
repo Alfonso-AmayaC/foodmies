@@ -8,15 +8,15 @@ export default function Layout({ children, path }) {
     return (
         <>
             <Head>
-                <link rel='icon' href='/static/favicon.png' />
+                <link rel='icon' href='/favicon.png' />
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
-            <Grid h={'100vh'} templateRows={'repeat(2, 1fr)'} templateColumns={'repeat(6, 1fr)'} position={'relative'}>
-                <GridItem rowSpan={2} colSpan={1} bg={'#BFE4FF'} roundedBottomRight={'10px'} roundedTopRight={'10px'} zIndex={'modal'} roundedRight={'20px'} borderRight={'9px solid #E2E8F0'}>
+            <Grid h={'100vh'} templateRows={'repeat(2, 1fr)'} templateColumns={{ base: '1', md: 'repeat(8, 1fr)', lg: 'repeat(6, 1fr)' }} position={'relative'}>
+                <GridItem rowSpan={2} colSpan={{ base: 0, md: 2, lg: 1 }} bg={'#BFE4FF'} roundedBottomRight={'10px'} roundedTopRight={'10px'} zIndex={'modal'} roundedRight={'20px'} borderRight={'9px solid #E2E8F0'} display={{ base: 'none', md:'initial' }}>
                 <Stack direction={'column'} gap={10} pt={'10'}>
                     <Link href={'/pantry'} className={'menuLogo'}>
-                        <Heading as={'h2'} fontFamily={'Permanent Marker'} textAlign={'center'}>Foodmies - The irony</Heading>
+                        <Heading as={'h2'} fontFamily={'Permanent Marker'} textAlign={'center'}>Foodmies</Heading>
                     </Link>
                     <Stack>
                         <Link href={'/pantry'} className={`menuItem ${path === 'pantry' ? 'active' : ''}`}>
@@ -40,7 +40,7 @@ export default function Layout({ children, path }) {
                     </Stack>
                 </Stack>
                 </GridItem>
-                <GridItem rowSpan={2} colSpan={5} bg='#FFFFFF' pt={'10'} px={'14'} fontFamily={'inter'} overflowY={'scroll'}>
+                <GridItem rowSpan={2} colSpan={{ base: 1, md: 6, lg: 5 }} bg='#FFFFFF' pt={'10'} px={{ base: '8', md: '10' }} fontFamily={'inter'} overflowY={'scroll'}>
                     {children}
                 </GridItem>
             </Grid>
