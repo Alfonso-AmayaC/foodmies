@@ -18,7 +18,7 @@ This project requires a minimal configuration. Create a .env file at the root of
 Once you have created and added the environment variables file run the next commands:
 
 ```console
-yarn add # Install dependencies
+yarn # Install dependencies
 yarn dev # Start dev server
 ```
 Dependencies and dev dependencies
